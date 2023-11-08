@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --rainbow-text-start-color: #B993D6;
+    --rainbow-text-end-color: #8CA6DB;
+    --fallback-rb-background-color: #B993D6;
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.2rem;
+    color: lightgrey;
+}
+
+.rainbow-text {
+    background-color: var(--fallback-rb-background-color);
+    background: linear-gradient(45deg, var(--rainbow-text-start-color), var(--rainbow-text-end-color));
+    background-size: 100%;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
